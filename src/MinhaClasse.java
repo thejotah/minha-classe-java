@@ -1,9 +1,18 @@
 public class MinhaClasse {
     
 public static void main (String [] args) {
-
-    System.out.print ("Hello, world? Haha");    //System me de uma saida, cujo vai ser uma impressão, imprima esse texto para mim
     
+    String primeiroNome = "José";
+    String ultimoNome = "Oliveira";
+
+    String nomeCompleto = nomeCompleto (primeiroNome,ultimoNome);
+
+    System.out.println(nomeCompleto);
+
+}
+
+public static String nomeCompleto (String primeiroNome, String ultimoNome) {
+    return "Resultado do Método:" + primeiroNome.concat(" ").concat(ultimoNome);
 }
 
 }
